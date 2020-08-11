@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBYauzKUamtaYfHzgKzeHDWXscqaMHaQ8Q",
+    authDomain: "firebasics-2c3fc.firebaseapp.com",
+    databaseURL: "https://firebasics-2c3fc.firebaseio.com",
+    projectId: "firebasics-2c3fc",
+    storageBucket: "firebasics-2c3fc.appspot.com",
+    messagingSenderId: "250840956018",
+    appId: "1:250840956018:web:11e9dd493deee544c316eb",
+    measurementId: "G-SCHMM85EMQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="app.js" defer></script>    <!--defer means load after body elements loaded first--> 
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"
+integrity="sha512-/seDHxVfh1NvFUscAj8GsHQVZJvr2jjAoYsNL7As2FCaFHUHYIarl3sRCvVlFgyouVNiRgHIebyLKjpgd1SLDw=="
+crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>My Awesome App</h1>
+
+    <section id="whenSignedOut">
+        <button id="signInBtn">Sign in with Google</button>
+    </section>
+
+    <section id="whenSignedIn" hidden="true">
+
+        <div id="userDetails"></div>
+
+        <button id="signOutBtn">Sign Out</button>
+
+    </section>
+
+    <section>
+        <ul id="thingsList">
+
+        </ul>
+        <button id="createThing">Create Random Thing</button>
+    </section>
+
+
+
+
+
+
+
+
+</body>
+</html>
